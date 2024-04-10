@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart JS | Data Visualization</title>
+    <style>
+        :root {
+            --primary: #e7e7e7;
+           /*--primary: #121945;*/
+            --secondary: #fff;
+            /*--secondary: #182143;*/
+            --text: #111;
+            /*--text: #ffff;*/
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        .card{
+            position: relative;
+            width: 50vw;
+            background: var(--secondary);
+            padding: 1rem;
+            border-radius: .8rem;
+            box-shadow: 0 .1rem .2rem #0002;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bar Graph</h2>
+    <div class="card">
+        <canvas id="bar-graph"></canvas>
+    </div>
+
+    <h2>Pie Graph</h2>
+    <div class="card">
+        <canvas id="pie-graph"></canvas>
+    </div>
+
+    <h2>Line Graph</h2>
+    <div class="card">
+        <canvas id="line-graph"></canvas>
+    </div>
+
+    <h2>Mixed Chart</h2>
+    <div class="card">
+        <canvas id="mixed-chart"></canvas>
+    </div>
+
+    <h2>Polar Area Chart</h2>
+    <div class="card">
+        <canvas id="polar-area-chart"></canvas>
+    </div>
+
+    <h2>Radar Chart</h2>
+    <div class="card">
+        <canvas id="radar-chart"></canvas>
+    </div>
+
+        <h2>Scatter Chart</h2>
+    <div class="card">
+        <canvas id="scatter-chart"></canvas>
+    </div>
+    
+    <h2>Bubble Chart</h2>
+    <div class="card">
+        <canvas id="bubble-chart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
